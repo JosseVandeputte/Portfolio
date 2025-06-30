@@ -1,0 +1,86 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(var(--background-rgb, 255, 255, 255), 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(var(--gray-rgb), 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--foreground);
+  text-decoration: none;
+  font-family: var(--font-geist-mono);
+}
+
+.logoImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navLink {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navLink:hover {
+  color: #666;
+}
+
+.navLink.active {
+  color: var(--foreground);
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    background: rgba(10, 10, 10, 0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .nav {
+    gap: 20px;
+  }
+  
+  .navLink {
+    font-size: 14px;
+  }
+}

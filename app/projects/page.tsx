@@ -11,7 +11,16 @@ export default function Projects() {
       technologies: ["Next.js", "CSS Modules", "TypeScript"],
       image: "/next.svg",
       demoUrl: "https://vdpj.be",
-      codeUrl: ""
+      codeUrl: "https://github.com/JosseVandeputte/Portfolio"
+    },
+    {
+      id: 2,
+      title: "Wordle",
+      description: "A clone of the popular Wordle game with a modern twist.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      image: "/wordle.png",
+      demoUrl: "https://wordle.vdpj.be",
+      codeUrl: "https://github.com/JosseVandeputte/Wordle"
     }
   ];
 
@@ -50,10 +59,10 @@ export default function Projects() {
                 </div>
                 
                 <div className={styles.projectLinks}>
-                  <Link href={project.demoUrl} className={styles.demoLink}>
+                  <Link href={project.demoUrl} className={styles.demoLink} target="_blank" rel="noopener noreferrer">
                     Live Demo
                   </Link>
-                  <Link href={project.codeUrl} className={styles.codeLink}>
+                  <Link href={project.codeUrl} className={styles.codeLink} target="_blank" rel="noopener noreferrer">
                     View Code
                   </Link>
                 </div>

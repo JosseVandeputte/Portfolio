@@ -63,8 +63,7 @@
   margin-bottom: 20px;
 }
 
-.skills h3,
-.experience h3 {
+.skills h3 {
   font-size: 1.5rem;
   margin-bottom: 24px;
   font-weight: 600;
@@ -84,41 +83,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   border: 1px solid rgba(var(--gray-rgb), 0.1);
-}
-
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.timelineItem {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgba(var(--gray-rgb), 0.1);
-}
-
-.timelineItem:last-child {
-  border-bottom: none;
-}
-
-.year {
-  font-weight: 600;
-  color: rgba(var(--gray-rgb), 0.7);
-  font-size: 0.9rem;
-}
-
-.details h4 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.details p {
-  color: rgba(var(--gray-rgb), 0.7);
-  line-height: 1.6;
 }
 
 @media (max-width: 768px) {

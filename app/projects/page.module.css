@@ -5,7 +5,6 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
   
-  min-height: 100vh;
   font-family: var(--font-geist-sans);
   padding: 40px 0;
 }

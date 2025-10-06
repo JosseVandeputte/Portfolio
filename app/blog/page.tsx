@@ -23,7 +23,7 @@ export default function Blog() {
                                 height={400}
                                 className={styles.blogImage}
                             />
-                            <h2 className={styles.blogTitle}>Hackathon</h2>
+                            <h2 className={styles.blogTitle}>Hackathon - 12/11/2025 </h2>
                             <p className={styles.blogDescription}>
                                 Sharing my experience and learnings from participating in a recent hackathon of Hack The Future.
                             </p>

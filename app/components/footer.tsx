@@ -52,7 +52,7 @@ export default function Footer() {
                 LinkedIn
               </a>
               <a 
-                href="mailto:josse.vandeputte@gmail.com" 
+                href="mailto:&#x6a;&#x6f;&#x73;&#x73;&#x65;&#x2e;&#x76;&#x61;&#x6e;&#x64;&#x65;&#x70;&#x75;&#x74;&#x74;&#x65;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" 
                 className={styles.socialLink}
               >
                 Email

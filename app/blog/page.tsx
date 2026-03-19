@@ -33,7 +33,23 @@ export default function Blog() {
                         </div>
                         <div className={styles.link}>
                             <Image
-                                src="/internship.jpg"
+                                src="/blog/tech-and-meet/tms-background.jpg"
+                                alt="Tech & Meet Placeholder"
+                                width={500}
+                                height={300}
+                                className={styles.blogImage}
+                            />
+                            <h2 className={styles.blogTitle}>Tech & Meet</h2>
+                            <p className={styles.blogDescription}>
+                                Insights and highlights from attending the Tech & Meet conference of Howest.
+                            </p>
+                            <Link href="/blog/tech-and-meet" className={styles.readMore}>
+                                Read More
+                            </Link>
+                        </div>
+                        <div className={styles.link}>
+                            <Image
+                                src="/blog/internship/outkept-logo.jpg"
                                 alt="Internship Placeholder"
                                 width={600}
                                 height={400}
@@ -44,22 +60,6 @@ export default function Blog() {
                                 Reflecting on my internship experience and the valuable lessons learned at Outkept Ghent.
                             </p>
                             <Link href="/blog/internship" className={styles.readMore}>
-                                Read More
-                            </Link>
-                        </div>
-                        <div className={styles.link}>
-                            <Image
-                                src="/techandmeet.jpg"
-                                alt="Tech & Meet Placeholder"
-                                width={600}
-                                height={400}
-                                className={styles.blogImage}
-                            />
-                            <h2 className={styles.blogTitle}>Tech & Meet</h2>
-                            <p className={styles.blogDescription}>
-                                Insights and highlights from attending the Tech & Meet conference of Howest.
-                            </p>
-                            <Link href="/blog/tech-and-meet" className={styles.readMore}>
                                 Read More
                             </Link>
                         </div>

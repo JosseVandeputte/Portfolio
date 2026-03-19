@@ -15,14 +15,14 @@ export default function About() {
           <div className={styles.textContent}>
             <h2>Hello! I'm Josse Vandeputte</h2>
             <p>
-              I'm a full-stack developer and designer based in Belgium, passionate about 
+              I'm a full-stack developer based in Belgium, passionate about
               creating beautiful and functional digital experiences. With a strong foundation 
               in both frontend and backend technologies, I enjoy bringing ideas to life through code.
             </p>
             
             <p>
-              My journey in tech started with curiosity about how websites work, and it has 
-              evolved into a career where I get to solve complex problems and build solutions 
+              My journey in tech started with curiosity about how computers work, and it has
+              evolved into my studies where I get to solve complex problems and build solutions
               that make a difference. I believe in writing clean, maintainable code and 
               designing with the user in mind.
             </p>

@@ -7,8 +7,8 @@ export default function Projects() {
     {
       id: 1,
       title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing development skills.",
-      technologies: ["Next.js", "CSS Modules", "TypeScript"],
+      description: "A responsive portfolio website.",
+      technologies: ["React - Next.js", "CSS Modules", "TypeScript"],
       image: "/next.svg",
       demoUrl: "https://vdpj.be",
       codeUrl: "https://github.com/JosseVandeputte/Portfolio"

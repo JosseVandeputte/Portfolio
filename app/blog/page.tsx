@@ -17,7 +17,7 @@ export default function Blog() {
                     <div className={styles.buttons}>
                         <div className={styles.link}>
                             <Image
-                                src="/hackthefuture.jpg"
+                                src="/blog/hackathon/hackthefuture.jpg"
                                 alt="Hackathon Placeholder"
                                 width={600}
                                 height={400}
@@ -41,7 +41,7 @@ export default function Blog() {
                             />
                             <h2 className={styles.blogTitle}>Internship</h2>
                             <p className={styles.blogDescription}>
-                                Reflecting on my internship experience and the valuable lessons learned at [Company Name].
+                                Reflecting on my internship experience and the valuable lessons learned at Outkept Ghent.
                             </p>
                             <Link href="/blog/internship" className={styles.readMore}>
                                 Read More

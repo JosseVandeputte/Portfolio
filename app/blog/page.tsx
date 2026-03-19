@@ -17,7 +17,7 @@ export default function Blog() {
                     <div className={styles.buttons}>
                         <div className={styles.link}>
                             <Image
-                                src="/hackthefuture.jpg"
+                                src="/blog/hackathon/hackthefuture.jpg"
                                 alt="Hackathon Placeholder"
                                 width={600}
                                 height={400}

@@ -64,7 +64,7 @@ export default function Footer() {
         
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            © 2025 Josse Vandeputte. All rights reserved.
+            © {new Date().getFullYear()} Josse Vandeputte. All rights reserved.
           </p>
         </div>
       </div>

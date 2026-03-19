@@ -41,7 +41,7 @@ export default function Blog() {
                             />
                             <h2 className={styles.blogTitle}>Internship</h2>
                             <p className={styles.blogDescription}>
-                                Reflecting on my internship experience and the valuable lessons learned at [Company Name].
+                                Reflecting on my internship experience and the valuable lessons learned at Outkept Ghent.
                             </p>
                             <Link href="/blog/internship" className={styles.readMore}>
                                 Read More

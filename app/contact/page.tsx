@@ -5,9 +5,9 @@ export default function Contact() {
     <div className={styles.page}>
       <div className={styles.container}>
         <section className={styles.hero}>
-          <h1 className={styles.title}>Let's Work Together</h1>
+          <h1 className={styles.title}>Let&apos;s Work Together</h1>
           <p className={styles.subtitle}>
-            Ready to bring your ideas to life? I'd love to hear from you.
+            Ready to bring your ideas to life? I&apos;d love to hear from you.
           </p>
         </section>
 
@@ -16,7 +16,7 @@ export default function Contact() {
             <h2>Get In Touch</h2>
             <p>
               Whether you have a project in mind, want to collaborate, or just want to say hello, 
-              I'm always excited to connect with fellow developers, designers, and innovators.
+              I&apos;m always excited to connect with fellow developers, designers, and innovators.
             </p>
             
             <div className={styles.contactMethods}>

@@ -8,7 +8,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            Hi, I'm <span className={styles.highlight}>Josse</span>
+            Hi, I&apos;m <span className={styles.highlight}>Josse</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Full-stack developer
@@ -77,8 +77,8 @@ export default function Home() {
 
       <section className={styles.cta}>
         <div className={styles.container}>
-          <h2>Let's Work Together</h2>
-          <p>Ready to bring your ideas to life? Let's discuss your next project.</p>
+          <h2>Let&apos;s Work Together</h2>
+          <p>Ready to bring your ideas to life? Let&apos;s discuss your next project.</p>
           <Link href="/contact" className={styles.primaryButton}>
             Start a Conversation
           </Link>

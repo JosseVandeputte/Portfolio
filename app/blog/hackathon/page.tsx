@@ -54,12 +54,12 @@ export default function Hackathon() {
                     <section className={styles.section}>
                         <h2 className={styles.sectionTitle}>Diving into the Deep with Team Howest</h2>
                         <p>
-                            I teamed up with Mathijs Schaepdryver as team called "Coffee & Code".
-                            Together, we fully embraced the "Code, Create, Compete" mindset as we were assigned to
+                            I teamed up with Mathijs Schaepdryver as team called &quot;Coffee & Code&quot;.
+                            Together, we fully embraced the &quot;Code, Create, Compete&quot; mindset as we were assigned to
                             one of the most exciting tracks of the day.
                         </p>
                         <p>
-                            We took on Challenge 105: "Lost in the deep: codeerexpeditie naar Atlantis", which was
+                            We took on Challenge 105: &quot;Lost in the deep: codeerexpeditie naar Atlantis&quot;, which was
                             hosted and guided by the fantastic team at Exsertus.
                         </p>
                     </section>
@@ -115,7 +115,7 @@ export default function Hackathon() {
                             fun, educational, and flawlessly executed event.
                         </p>
                         <p>
-                            Sadly we didn't win anything but if we would team up together again, 
+                            Sadly we didn&apos;t win anything but if we would team up together again, 
                             we would definitely choose the same track and hopefully win something.
                         </p>
                         <p>It was the perfect mix of learning, networking, and pure hacking fun.</p>

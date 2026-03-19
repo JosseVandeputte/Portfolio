@@ -13,9 +13,9 @@ export default function About() {
 
         <section className={styles.content}>
           <div className={styles.textContent}>
-            <h2>Hello! I'm Josse Vandeputte</h2>
+            <h2>Hello! I&apos;m Josse Vandeputte</h2>
             <p>
-              I'm a full-stack developer based in Belgium, passionate about
+              I&apos;m a full-stack developer based in Belgium, passionate about
               creating beautiful and functional digital experiences. With a strong foundation 
               in both frontend and backend technologies, I enjoy bringing ideas to life through code.
             </p>

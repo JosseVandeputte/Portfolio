@@ -1,87 +1,61 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import { projects } from "./data/projects";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>
-            Hi, I&apos;m <span className={styles.highlight}>Josse</span>
+      <section className={styles.intro}>
+        <div className={styles.introInner}>
+          <h1 className={styles.name}>
+            <span className={styles.highlight}>Josse</span> Vandeputte
           </h1>
-          <p className={styles.heroSubtitle}>
-            Full-stack developer
+          <p className={styles.bio}>
+            Developer from Belgium. I study Applied Computer Science and build things 
+            on the side — mostly full-stack web stuff - in my free time.
           </p>
-          <p className={styles.heroDescription}>
-            I build modern web applications with clean code and beautiful design. 
-            Passionate about creating solutions that make a difference.
-          </p>
-          
-          <div className={styles.heroCtas}>
-            <Link href="/projects" className={styles.primaryButton}>
-              View My Work
-            </Link>
-            <Link href="/contact" className={styles.secondaryButton}>
-              Get In Touch
-            </Link>
-          </div>
         </div>
       </section>
 
-      <section className={styles.skills}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>What I Do</h2>
-          <div className={styles.skillsGrid}>
-            <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>
-                <Image
-                  src="/window.svg"
-                  alt="Frontend Development"
-                  width={24}
-                  height={24}
-                />
-              </div>
-              <h3>Frontend Development</h3>
-              <p>Creating responsive and interactive user interfaces.</p>
-            </div>
-            
-            <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>
-                <Image
-                  src="/globe.svg"
-                  alt="Backend Development"
-                  width={24}
-                  height={24}
-                />
-              </div>
-              <h3>Backend Development</h3>
-              <p>Building robust APIs and server-side applications.</p>
-            </div>
-            
-            <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>
-                <Image
-                  src="/file.svg"
-                  alt="UI/UX Design"
-                  width={24}
-                  height={24}
-                />
-              </div>
-              <h3>UI/UX Design</h3>
-              <p>Designing intuitive and engaging user experiences with attention to detail and usability.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.cta}>
-        <div className={styles.container}>
-          <h2>Let&apos;s Work Together</h2>
-          <p>Ready to bring your ideas to life? Let&apos;s discuss your next project.</p>
-          <Link href="/contact" className={styles.primaryButton}>
-            Start a Conversation
+      <section className={styles.about}>
+        <div className={styles.aboutInner}>
+          <p className={styles.aboutText}>
+            My journey in tech began with a curiosity about how computers work and has 
+            evolved into studying Applied Computer Science. I enjoy solving complex problems 
+            and building digital experiences that actually feel good to use. Both frontend 
+            and backend, focusing on clean code and solid architecture.
+          </p>
+          <Link href="/about" className={styles.inlineLink}>
+            More about my background →
           </Link>
+        </div>
+      </section>
+
+      <section className={styles.recent}>
+        <div className={styles.recentInner}>
+          <p className={styles.recentLabel}>Recent work</p>
+          <ul className={styles.projectList}>
+            {projects.reverse().slice(0, 3).map((project) => (
+              <li key={project.id}>
+                <Link href={project.demoUrl || project.codeUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
+                  <span className={styles.projectName}>{project.title}</span>
+                  <span className={styles.projectMeta}>{project.technologies.slice(0, 4).join(", ")}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href="/projects" className={styles.viewAll}>
+            All projects →
+          </Link>
+        </div>
+      </section>
+
+      <section className={styles.bottom}>
+        <div className={styles.bottomInner}>
+          <p className={styles.bottomText}>
+            Want to chat? <Link href="/contact" className={styles.inlineLink}>Get in touch</Link> or find me on{" "}
+            <Link href="https://github.com/JosseVandeputte" className={styles.inlineLink} target="_blank" rel="noopener noreferrer">GitHub</Link>.
+          </p>
         </div>
       </section>
     </div>

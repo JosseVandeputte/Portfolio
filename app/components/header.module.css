@@ -4,9 +4,10 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(var(--background-rgb), 0.9);
+  background: rgba(252, 252, 252, 0.8);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(var(--gray-rgb), 0.08);
+  padding-top: .5rem;
 }
 
 .container {

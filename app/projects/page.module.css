@@ -131,43 +131,6 @@
   background: var(--button-secondary-hover);
 }
 
-.cta {
-  text-align: center;
-  padding: 60px 0;
-  border-top: 1px solid rgba(var(--gray-rgb), 0.08);
-}
-
-.cta h2 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-.cta p {
-  font-size: 1.1rem;
-  color: rgba(var(--gray-rgb), 0.7);
-  margin-bottom: 30px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contactButton {
-  background: var(--foreground);
-  color: var(--background);
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.contactButton:hover {
-  background: var(--button-primary-hover);
-  transform: translateY(-2px);
-}
-
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
@@ -232,16 +195,6 @@
 
   .main ol {
     text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
   }
 
   a.secondary {

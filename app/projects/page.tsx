@@ -82,14 +82,6 @@ export default function Projects() {
             </div>
           ))}
         </section>
-
-        <section className={styles.cta}>
-          <h2>Interested in working together?</h2>
-          <p>I&apos;m always open to discussing new opportunities and collaborations.</p>
-          <Link href="/contact" className={styles.contactButton}>
-            Let&apos;s Talk
-          </Link>
-        </section>
       </div>
     </div>
   );

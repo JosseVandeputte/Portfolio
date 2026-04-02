@@ -35,7 +35,7 @@ export default function Home() {
         <div className={styles.recentInner}>
           <p className={styles.recentLabel}>Recent work</p>
           <ul className={styles.projectList}>
-            {projects.reverse().slice(0, 3).map((project) => (
+            {[...projects].reverse().slice(0, 3).map((project) => (
               <li key={project.id}>
                 <Link href={project.demoUrl || project.codeUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
                   <span className={styles.projectName}>{project.title}</span>

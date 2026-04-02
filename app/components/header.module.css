@@ -4,9 +4,9 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(var(--background-rgb, 255, 255, 255), 0.8);
+  background: rgba(var(--background-rgb), 0.9);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(var(--gray-rgb), 0.1);
+  border-bottom: 1px solid rgba(var(--gray-rgb), 0.08);
 }
 
 .container {
@@ -65,11 +65,7 @@
   background: var(--foreground);
 }
 
-@media (prefers-color-scheme: dark) {
-  .header {
-    background: rgba(10, 10, 10, 0.8);
-  }
-}
+
 
 @media (max-width: 768px) {
   .container {

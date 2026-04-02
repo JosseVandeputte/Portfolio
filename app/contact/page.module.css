@@ -3,21 +3,13 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
   --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-secondary-hover: #ebe8e4;
   
   font-family: var(--font-geist-sans);
   padding: 40px 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
+
 
 .container {
   max-width: 1000px;
@@ -74,11 +66,11 @@
 }
 
 .contactMethod {
-  background: var(--background);
-  border: 1px solid var(--gray-alpha-200);
+  background: var(--card-bg);
+  border: 1px solid rgba(var(--gray-rgb), 0.08);
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(var(--gray-rgb), 0.1);
+  box-shadow: 0 4px 6px rgba(var(--gray-rgb), 0.06);
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -177,8 +169,4 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-}
+

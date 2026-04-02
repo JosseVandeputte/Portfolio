@@ -3,21 +3,14 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
   --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-secondary-hover: #ebe8e4;
   
   font-family: var(--font-geist-sans);
   padding: 40px 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
+
+
 
 .container {
   max-width: 1200px;
@@ -59,8 +52,8 @@
 }
 
 .link {
-  background: var(--background);
-  border: 1px solid rgba(var(--gray-rgb), 0.1);
+  background: var(--card-bg);
+  border: 1px solid rgba(var(--gray-rgb), 0.08);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease;

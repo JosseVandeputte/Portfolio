@@ -3,21 +3,13 @@
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
   --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+  --button-secondary-hover: #ebe8e4;
   
   font-family: var(--font-geist-sans);
   padding: 40px 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
+
 
 .container {
   max-width: 1200px;
@@ -55,8 +47,8 @@
 }
 
 .projectCard {
-  background: var(--background);
-  border: 1px solid rgba(var(--gray-rgb), 0.1);
+  background: var(--card-bg);
+  border: 1px solid rgba(var(--gray-rgb), 0.08);
   border-radius: 16px;
   padding: 30px;
   transition: all 0.3s ease;
@@ -98,7 +90,7 @@
 }
 
 .techTag {
-  background: rgba(var(--gray-rgb), 0.08);
+  background: rgba(184, 115, 51, 0.08);
   color: var(--foreground);
   padding: 6px 12px;
   border-radius: 16px;
@@ -142,7 +134,7 @@
 .cta {
   text-align: center;
   padding: 60px 0;
-  border-top: 1px solid rgba(var(--gray-rgb), 0.1);
+  border-top: 1px solid rgba(var(--gray-rgb), 0.08);
 }
 
 .cta h2 {
@@ -263,8 +255,4 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-}
+

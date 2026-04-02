@@ -1,6 +1,6 @@
 .content {
-  background: var(--background);
-  border: 1px solid rgba(var(--gray-rgb), 0.1);
+  background: var(--card-bg);
+  border: 1px solid rgba(var(--gray-rgb), 0.08);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease;

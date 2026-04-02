@@ -11,13 +11,8 @@
   padding: 40px 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-  }
-}
+
+
 
 .container {
   max-width: 600px;
@@ -33,7 +28,7 @@
 .errorCode {
   font-size: clamp(5rem, 15vw, 8rem);
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #b87333 0%, #d4956a 50%, #8b5e3c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -105,30 +100,8 @@
 }
 
 .secondaryButton:hover {
-  background-color: #f2f2f2;
+  background-color: #ebe8e4;
   border-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  .primaryButton {
-    background-color: white;
-    color: black;
-    border-color: white;
-  }
 
-  .primaryButton:hover {
-    background-color: #ccc;
-    border-color: #ccc;
-  }
-
-  .secondaryButton {
-    background-color: transparent;
-    color: white;
-    border-color: #444;
-  }
-
-  .secondaryButton:hover {
-    background-color: #1a1a1a;
-    border-color: white;
-  }
-}

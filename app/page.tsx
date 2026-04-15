@@ -39,7 +39,7 @@ export default function Home() {
               <li key={project.id}>
                 <Link href={project.demoUrl || project.codeUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
                   <span className={styles.projectName}>{project.title}</span>
-                  <span className={styles.projectMeta}>{project.technologies.slice(0, 4).join(", ")}</span>
+                  <span className={styles.projectMeta}>{project.technologies.slice(0, 3).join(", ")}</span>
                 </Link>
               </li>
             ))}

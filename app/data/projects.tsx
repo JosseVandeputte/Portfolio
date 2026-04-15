@@ -1,16 +1,6 @@
 export const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    imageAlt: "Portfolio Website",
-    description: "A responsive portfolio website.",
-    technologies: ["React", "TypeScript"],
-    image: "/next.svg",
-    demoUrl: "https://vdpj.be",
-    codeUrl: "",
-  },
-  {
-    id: 2,
     title: "Wordle",
     imageAlt: "Wordle",
     description: "A clone of the popular Wordle game with a modern twist.",
@@ -20,8 +10,8 @@ export const projects = [
     codeUrl: "",
   },
   {
-    id: 3,
-    title: <>Vigilis Law Consult <br/> <span style={{ fontStyle: 'italic', fontSize: '0.75em', fontWeight: 'normal' }}>(updated version will be online at end of Q2 2026)</span></>,
+    id: 2,
+    title: <>Vigilis Law Consult <br/> <span style={{ fontStyle: 'italic', fontSize: '0.75em', fontWeight: 'normal' }}>(updated version will be online around mid of July 2026)</span></>,
     imageAlt: "Vigilis Law Consult",
     description: "A professional consulting platform for an expert in Belgian security law, offering legal advisory, law enforcement training, and public sector consulting.",
     technologies: ["React", "TypeScript", "Deno"],
@@ -30,7 +20,7 @@ export const projects = [
     codeUrl: "",
   },
   {
-    id: 4,
+    id: 3,
     title: <>Nimzo<br/> <span style={{ fontStyle: 'italic', fontSize: '0.75em', fontWeight: 'normal' }}>(see <a target="_blank" rel="noopener noreferrer" href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#119;&#119;&#119;&#46;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#46;&#99;&#111;&#109;&#47;&#105;&#110;&#47;&#106;&#111;&#115;&#115;&#101;&#45;&#118;&#97;&#110;&#100;&#101;&#112;&#117;&#116;&#116;&#101;&#47;" style={{color: "darkblue", textDecoration:"underline"}}>my LinkedIn</a> under the section projects for more details)</span></>,
     imageAlt: "Netlify Clone",
     description: "A clone of the popular Netlify platform with a modern twist.",
@@ -40,7 +30,7 @@ export const projects = [
     codeUrl: "",
   },
   {
-    id: 5,
+    id: 4,
     title: "RailSync",
     imageAlt: "RailSync",
     description: "An independent, real-time platform providing up-to-date travel information, delays, and departure times for the Belgian railways.",

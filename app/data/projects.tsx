@@ -7,7 +7,7 @@ export const projects = [
     technologies: ["React", "TypeScript"],
     image: "/next.svg",
     demoUrl: "https://vdpj.be",
-    codeUrl: "https://github.com/JosseVandeputte/Portfolio"
+    codeUrl: "",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const projects = [
     technologies: ["HTML", "JavaScript"],
     image: "/wordle.png",
     demoUrl: "https://wordle.vdpj.be",
-    codeUrl: "https://github.com/JosseVandeputte/Wordle"
+    codeUrl: "",
   },
   {
     id: 3,
@@ -27,17 +27,17 @@ export const projects = [
     technologies: ["React", "TypeScript", "Deno"],
     image: "/vlc.png",
     demoUrl: "https://vigilislawconsult.be",
-    codeUrl: "https://github.com/JosseVandeputte/vigilislawconsult.be/tree/v2"    
+    codeUrl: "",
   },
   {
     id: 4,
-    title: "Netlify Clone",
+    title: <>Nimzo<br/> <span style={{ fontStyle: 'italic', fontSize: '0.75em', fontWeight: 'normal' }}>(see <a target="_blank" rel="noopener noreferrer" href="&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;&#119;&#119;&#119;&#46;&#108;&#105;&#110;&#107;&#101;&#100;&#105;&#110;&#46;&#99;&#111;&#109;&#47;&#105;&#110;&#47;&#106;&#111;&#115;&#115;&#101;&#45;&#118;&#97;&#110;&#100;&#101;&#112;&#117;&#116;&#116;&#101;&#47;" style={{color: "darkblue", textDecoration:"underline"}}>my LinkedIn</a> under the section projects for more details)</span></>,
     imageAlt: "Netlify Clone",
     description: "A clone of the popular Netlify platform with a modern twist.",
     technologies: ["React", "TypeScript", "Spring Boot", "LocalStack (AWS)", "S3", "ECR", "ECS", "Docker"],
-    image: "/netlify.png",
-    demoUrl: "https://netlify.vdpj.be",
-    codeUrl: "https://github.com/JosseVandeputte/Netlify-Clone"
+    image: "/nimzo.png",
+    demoUrl: "",
+    codeUrl: "",
   },
   {
     id: 5,

@@ -37,10 +37,17 @@ export default function Home() {
           <ul className={styles.projectList}>
             {[...projects].reverse().slice(0, 3).map((project) => (
               <li key={project.id}>
-                <Link href={project.demoUrl || project.codeUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
-                  <span className={styles.projectName}>{project.title}</span>
-                  <span className={styles.projectMeta}>{project.technologies.slice(0, 3).join(", ")}</span>
-                </Link>
+                {project.demoUrl || project.codeUrl ? (
+                  <Link href={project.demoUrl || project.codeUrl} className={styles.projectLink} target="_blank" rel="noopener noreferrer">
+                    <span className={styles.projectName}>{project.title}</span>
+                    <span className={styles.projectMeta}>{project.technologies.slice(0, 3).join(", ")}</span>
+                  </Link>
+                ) : (
+                  <div className={styles.projectLink}>
+                    <span className={styles.projectName}>{project.title}</span>
+                    <span className={styles.projectMeta}>{project.technologies.slice(0, 3).join(", ")}</span>
+                  </div>
+                )}
               </li>
             ))}
           </ul>

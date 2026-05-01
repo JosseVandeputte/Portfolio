@@ -70,6 +70,10 @@
   margin-bottom: 20px;
 }
 
+.projectImage img {
+  border-radius: 12px;
+}
+
 .projectTitle {
   font-size: 1.5rem;
   font-weight: 600;

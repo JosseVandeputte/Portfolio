@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import { projects, skills, excludeFromSkills } from "../data/projects";
 import Link from "next/link";
+import CollapsibleSection from "../components/collapsible-section";
 
 const technologies = [
   ...new Set([
@@ -11,13 +12,6 @@ const technologies = [
 
 
 const experience = [
-  {
-    role: "Internship Full-Stack Developer",
-    company: "OutKept",
-    period: "Feb 2026 - May 2026",
-    location: "Ghent, Belgium",
-    tags: ["React.js", "TypeScript", "Apollo GraphQL"],
-  },
   {
     role: "Student Job",
     company: "Kinepolis",
@@ -31,6 +25,13 @@ const experience = [
     period: "Aug 2023 - Present",
     location: "Bruges, Belgium",
     tags: ["Front-end", "Back-end"],
+  },
+  {
+    role: "Internship Full-Stack Developer",
+    company: "OutKept",
+    period: "Feb 2026 - May 2026",
+    location: "Ghent, Belgium",
+    tags: ["React.js", "TypeScript", "Apollo GraphQL"],
   },
   {
     role: "Student Job",
@@ -85,17 +86,15 @@ export default function About() {
             </p>
           </div>
 
-          <div className={styles.skills}>
-            <h3 className={styles.sectionHeading}>Technologies I work with</h3>
+          <CollapsibleSection title="Technologies I work with">
             <div className={styles.skillTags}>
               {technologies.map((tech) => (
                 <span key={tech} className={styles.tag}>{tech}</span>
               ))}
             </div>
-          </div>
+          </CollapsibleSection>
 
-          <div className={styles.section}>
-            <h3 className={styles.sectionHeading}>Experience</h3>
+          <CollapsibleSection title="Experience">
             <div className={styles.timeline}>
               {experience.map((item) => (
                 <div key={item.role + item.company} className={styles.timelineItem}>
@@ -105,9 +104,7 @@ export default function About() {
                   </div>
                   <div className={styles.timelineRight}>
                     <p className={styles.timelineRole}>{item.role}</p>
-                    <p className={styles.timelineCompany}>
-                      {item.company}
-                    </p>
+                    <p className={styles.timelineCompany}>{item.company}</p>
                     {item.tags.length > 0 && (
                       <div className={styles.tagRow}>
                         {item.tags.map((tag) => (
@@ -119,10 +116,9 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </CollapsibleSection>
 
-          <div className={styles.section}>
-            <h3 className={styles.sectionHeading}>Education</h3>
+          <CollapsibleSection title="Education">
             <div className={styles.timeline}>
               {education.map((item) => (
                 <div key={item.school} className={styles.timelineItem}>
@@ -136,10 +132,9 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </CollapsibleSection>
 
-          <div className={styles.section}>
-            <h3 className={styles.sectionHeading}>Licenses &amp; Certifications</h3>
+          <CollapsibleSection title="Licenses & Certifications">
             <div className={styles.timeline}>
               {certifications.map((item) => (
                 <div key={item.name} className={styles.timelineItem}>
@@ -160,7 +155,7 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+          </CollapsibleSection>
         </section>
       </div>
     </div>

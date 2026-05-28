@@ -1,4 +1,12 @@
 import styles from "./page.module.css";
+import { projects, skills, excludeFromSkills } from "../data/projects";
+
+const technologies = [
+  ...new Set([
+    ...projects.flatMap((p) => p.technologies).filter((t) => !excludeFromSkills.has(t)),
+    ...skills,
+  ]),
+];
 
 export default function About() {
   return (
@@ -31,25 +39,9 @@ export default function About() {
           <div className={styles.skills}>
             <h3>Technologies I work with</h3>
             <div className={styles.skillTags}>
-              <span className={styles.tag}>React</span>
-              <span className={styles.tag}>TypeScript</span>
-              <span className={styles.tag}>Deno</span>
-              <span className={styles.tag}>JavaScript</span>
-              <span className={styles.tag}>Vue.js</span>
-              <span className={styles.tag}>Node.js</span>
-              <span className={styles.tag}>Laravel</span>
-              <span className={styles.tag}>Python</span>
-              <span className={styles.tag}>CSS/SCSS</span>
-              <span className={styles.tag}>PHP</span>
-              <span className={styles.tag}>C#</span>
-              <span className={styles.tag}>PostgreSQL</span>
-              <span className={styles.tag}>MySQL</span>
-              <span className={styles.tag}>MongoDB</span>
-              <span className={styles.tag}>Redis</span>
-              <span className={styles.tag}>GraphQL</span>
-              <span className={styles.tag}>Git</span>
-              <span className={styles.tag}>Docker</span>
-              <span className={styles.tag}>Azure</span>
+              {technologies.map((tech) => (
+                <span key={tech} className={styles.tag}>{tech}</span>
+              ))}
             </div>
           </div>
         </section>

@@ -58,8 +58,8 @@ export const projects = [
     id: 6,
     title: "RailSync",
     imageAlt: "RailSync",
-    description: "An independent, real-time platform providing up-to-date travel information, delays, and departure times for the Belgian railways.",
-    technologies: ["React", "TypeScript", "iRail API"],
+    description: "An independent, real-time platform providing up-to-date travel information, delays, and departure times for the Belgian railways from the iRail API.",
+    technologies: ["React", "TypeScript"],
     image: "/railsync.png",
     demoUrl: "https://railsync.vdpj.be",
     codeUrl: "",
@@ -76,4 +76,29 @@ export const projects = [
     codeUrl: "",
     isSchoolProject: true,
   },
+];
+
+export const excludeFromSkills = new Set([
+  "Vert.x",
+  "SonarQube",
+  "Android Studio",
+  "S3",
+  "ECR",
+  "ECS",
+]);
+
+export const skills = [
+  "Vue.js",
+  "Node.js",
+  "Laravel",
+  "Python",
+  "CSS/SCSS",
+  "PHP",
+  "C#",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "Redis",
+  "GraphQL",
+  "Git",
 ];

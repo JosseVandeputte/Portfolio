@@ -11,7 +11,7 @@ export default function Footer() {
               Josse Vandeputte
             </Link>
             <p className={styles.tagline}>
-              Full-stack developer & designer
+              Full-stack developer
             </p>
           </div>
           

@@ -3,11 +3,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import styles from './header.module.css';
 
 export default function Header() {
   const pathname = usePathname();
-  
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Me' },
@@ -26,9 +28,9 @@ export default function Header() {
             width={40}
             height={40}
             className={styles.logoImage}
-            />
+          />
         </Link>
-        
+
         <nav className={styles.nav}>
           {navItems.map((item) => (
             <Link
@@ -40,7 +42,33 @@ export default function Header() {
             </Link>
           ))}
         </nav>
+
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+        >
+          <span className={`${styles.bar} ${menuOpen ? styles.barTop : ''}`} />
+          <span className={`${styles.bar} ${menuOpen ? styles.barMid : ''}`} />
+          <span className={`${styles.bar} ${menuOpen ? styles.barBot : ''}`} />
+        </button>
       </div>
+
+      {menuOpen && (
+        <nav className={styles.mobileMenu}>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${styles.mobileLink} ${pathname === item.href ? styles.mobileActive : ''}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }

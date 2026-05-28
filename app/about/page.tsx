@@ -15,7 +15,7 @@ export default function About() {
         <section className={styles.hero}>
           <h1 className={styles.title}>About Me</h1>
           <p className={styles.subtitle}>
-            Passionate developer with a love for creating digital experiences
+            Applied Computer Science student at Howest · Graduating June 2026
           </p>
         </section>
 
@@ -23,16 +23,15 @@ export default function About() {
           <div className={styles.textContent}>
             <h2>Hello! I&apos;m Josse Vandeputte</h2>
             <p>
-              I&apos;m a full-stack developer based in Belgium, passionate about
-              creating beautiful and functional digital experiences. With a strong foundation 
-              in both frontend and backend technologies, I enjoy bringing ideas to life through code.
+              I&apos;m a full-stack developer from Belgium, currently finishing my degree in
+              Applied Computer Science at Howest (Bruges). I build both frontend and backend,
+              and I care about writing code that&apos;s clean, maintainable, and actually
+              pleasant to work with.
             </p>
-            
             <p>
-              My journey in tech started with curiosity about how computers work, and it has
-              evolved into my studies where I get to solve complex problems and build solutions
-              that make a difference. I believe in writing clean, maintainable code and 
-              designing with the user in mind.
+              Alongside my studies I have worked on personal projects like RailSync and
+              Vigilis Law Consult, and completed an internship at Outkept in Ghent where I
+              got hands-on experience in a real development environment.
             </p>
           </div>
 

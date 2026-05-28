@@ -3,7 +3,43 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { projects } from "../data/projects";
 
+type Project = (typeof projects)[number];
+
+function ProjectCard({ project }: { project: Project }) {
+  return (
+    <div className={styles.projectCard}>
+      <div className={styles.projectImage}>
+        <Image src={project.image} alt={project.imageAlt} width={70} height={70} />
+      </div>
+      <div className={styles.projectContent}>
+        <h3 className={styles.projectTitle}>{project.title}</h3>
+        <p className={styles.projectDescription}>{project.description}</p>
+        <div className={styles.technologies}>
+          {project.technologies.map((tech) => (
+            <span key={tech} className={styles.techTag}>{tech}</span>
+          ))}
+        </div>
+        <div className={styles.projectLinks}>
+          {project.demoUrl && (
+            <Link href={project.demoUrl} className={styles.demoLink} target="_blank" rel="noopener noreferrer">
+              Live Demo
+            </Link>
+          )}
+          {project.codeUrl && (
+            <Link href={project.codeUrl} className={styles.codeLink} target="_blank" rel="noopener noreferrer">
+              View Code
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Projects() {
+  const personalProjects = projects.filter((p) => !p.isSchoolProject);
+  const schoolProjects = projects.filter((p) => p.isSchoolProject);
+
   return (
     <div className={styles.page}>
       <div className={styles.container}>
@@ -15,46 +51,19 @@ export default function Projects() {
         </section>
 
         <section className={styles.projectsGrid}>
-          {projects.map((project) => (
-            <div key={project.id} className={styles.projectCard}>
-              <div className={styles.projectImage}>
-                <Image
-                  src={project.image}
-                  alt={project.imageAlt}
-                  width={70}
-                  height={70}
-                />
-              </div>
-              
-              <div className={styles.projectContent}>
-                <h3 className={styles.projectTitle}>{project.title}</h3>
-                <p className={styles.projectDescription}>{project.description}</p>
-                
-                <div className={styles.technologies}>
-                  {project.technologies.map((tech) => (
-                    <span key={tech} className={styles.techTag}>
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                
-                <div className={styles.projectLinks}>
-                  {project.demoUrl && (
-                  <Link href={project.demoUrl} className={styles.demoLink} target="_blank" rel="noopener noreferrer">
-                    Live Demo
-                  </Link>
-                  )}
-
-                  {project.codeUrl && (
-                  <Link href={project.codeUrl} className={styles.codeLink} target="_blank" rel="noopener noreferrer">
-                    View Code
-                  </Link>    
-                  )}
-                </div>
-              </div>
-            </div>
+          {personalProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </section>
+
+        <div className={styles.schoolSection}>
+          <h2 className={styles.sectionTitle}>Schoolprojects</h2>
+          <section className={styles.projectsGrid}>
+            {schoolProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </section>
+        </div>
       </div>
     </div>
   );

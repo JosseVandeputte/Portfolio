@@ -110,7 +110,7 @@
 .timelineItem::before {
   content: '';
   position: absolute;
-  left: -26px;
+  left: -27px;
   top: 6px;
   width: 10px;
   height: 10px;

@@ -7,6 +7,17 @@
   padding: 40px 0;
 }
 
+.page a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.page a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 
 
 .container {
@@ -56,10 +67,112 @@
   margin-bottom: 20px;
 }
 
-.skills h3 {
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sectionHeading {
   font-size: 1.5rem;
-  margin-bottom: 24px;
   font-weight: 600;
+  margin-bottom: 40px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--accent);
+  color: var(--foreground);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 28px;
+  gap: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  position: relative;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--background);
+  transform: translateX(-50%);
+}
+
+.timelineLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 2px;
+}
+
+.timelinePeriod {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.timelineLocation {
+  font-size: 0.8rem;
+  color: rgba(var(--gray-rgb), 0.5);
+}
+
+.timelineRight {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timelineRole {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.timelineCompany {
+  font-size: 0.9rem;
+  color: rgba(var(--gray-rgb), 0.65);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timelineType {
+  font-size: 0.75rem;
+  background: rgba(184, 115, 51, 0.08);
+  border: 1px solid rgba(184, 115, 51, 0.2);
+  color: var(--accent);
+  padding: 1px 8px;
+  border-radius: 20px;
+}
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
 }
 
 .skillTags {
@@ -82,14 +195,20 @@
   .container {
     padding: 0 16px;
   }
-  
-  .timelineItem {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  
+
   .content {
     gap: 40px;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .timelineLeft {
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
   }
 }
 

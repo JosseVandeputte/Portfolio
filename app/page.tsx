@@ -12,7 +12,7 @@ export default function Home() {
           </h1>
           <p className={styles.bio}>
             Developer from Belgium. I study Applied Computer Science and build things 
-            on the side — mostly full-stack web stuff - in my free time.
+            on the side - mostly full-stack web stuff - in my free time.
           </p>
         </div>
       </section>

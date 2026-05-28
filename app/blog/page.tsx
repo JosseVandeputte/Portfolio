@@ -64,13 +64,10 @@ export default function Blog() {
                             </Link>
                         </div>
                         <div className={styles.link}>
-                            <Image
-                                src="/logo.png"
-                                alt="How this website was made"
-                                width={600}
-                                height={400}
-                                className={styles.blogImage}
-                            />
+                            <div className={styles.websitePreview}>
+                                <span className={styles.websitePreviewStack}>Next.js · TypeScript · CSS Modules</span>
+                                <span className={styles.websitePreviewUrl}>vdpj.be</span>
+                            </div>
                             <h2 className={styles.blogTitle}>How I Built This Website</h2>
                             <p className={styles.blogDescription}>
                                 A look at the tech stack, hosting setup on Vimexx, and how new blog posts get added.

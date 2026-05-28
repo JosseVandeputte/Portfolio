@@ -23,7 +23,7 @@ export default function Blog() {
                                 height={400}
                                 className={styles.blogImage}
                             />
-                            <h2 className={styles.blogTitle}>Hackathon - 12/11/2025 </h2>
+                            <h2 className={styles.blogTitle}>Hackathon - 2025 </h2>
                             <p className={styles.blogDescription}>
                                 Sharing my experience and learnings from participating in a recent hackathon of Hack The Future.
                             </p>
@@ -55,11 +55,27 @@ export default function Blog() {
                                 height={400}
                                 className={styles.blogImage}
                             />
-                            <h2 className={styles.blogTitle}>Internship</h2>
+                            <h2 className={styles.blogTitle}>Internship @ OutKept</h2>
                             <p className={styles.blogDescription}>
                                 Reflecting on my internship experience and the valuable lessons learned at Outkept Ghent.
                             </p>
                             <Link href="/blog/internship" className={styles.readMore}>
+                                Read More
+                            </Link>
+                        </div>
+                        <div className={styles.link}>
+                            <Image
+                                src="/logo.png"
+                                alt="How this website was made"
+                                width={600}
+                                height={400}
+                                className={styles.blogImage}
+                            />
+                            <h2 className={styles.blogTitle}>How I Built This Website</h2>
+                            <p className={styles.blogDescription}>
+                                A look at the tech stack, hosting setup on Vimexx, and how new blog posts get added.
+                            </p>
+                            <Link href="/blog/website" className={styles.readMore}>
                                 Read More
                             </Link>
                         </div>

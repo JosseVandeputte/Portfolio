@@ -59,7 +59,10 @@
 
 .sectionTitle {
   font-size: 1.55rem;
+  font-weight: 600;
   margin-bottom: 0.9rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
 }
 
 .list {

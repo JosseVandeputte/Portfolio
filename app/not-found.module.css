@@ -1,13 +1,8 @@
 .page {
-	--gray-rgb: 0, 0, 0;
-	--gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-	--gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+	--button-primary-hover: #383838;
+	--button-secondary-hover: #ebe8e4;
 
 	font-family: var(--font-geist-sans);
-	min-height: 90vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	padding: 40px 0;
 }
 
@@ -25,11 +20,17 @@
 .errorCode {
 	font-size: clamp(5rem, 15vw, 8rem);
 	font-weight: 700;
-	background: linear-gradient(135deg, #b87333 0%, #d4956a 50%, #8b5e3c 100%);
+	background: linear-gradient(
+		135deg,
+		var(--accent) 0%,
+		var(--accent-light) 50%,
+		var(--accent-dark) 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	line-height: 1;
+	margin-top: 48px;
 	margin-bottom: 16px;
 	letter-spacing: -2px;
 }
@@ -41,7 +42,7 @@
 	background: linear-gradient(
 		135deg,
 		var(--foreground) 0%,
-		rgba(var(--gray-rgb), 0.7) 100%
+		rgba(0, 0, 0, 0.7) 100%
 	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -50,7 +51,7 @@
 
 .subtitle {
 	font-size: 1.1rem;
-	color: rgba(var(--gray-rgb), 0.7);
+	color: rgba(0, 0, 0, 0.7);
 	margin-bottom: 48px;
 	line-height: 1.6;
 }
@@ -77,30 +78,30 @@
 	text-decoration: none;
 	border-radius: 6px;
 	transition: all 200ms ease;
-	cursor: pointer;
 	border: 1px solid transparent;
 	display: inline-block;
 	min-width: 160px;
+	text-align: center;
 }
 
 .primaryButton {
-	background-color: black;
-	color: white;
-	border-color: black;
+	background: var(--foreground);
+	color: var(--background);
+	border-color: var(--foreground);
 }
 
 .primaryButton:hover {
-	background-color: #383838;
-	border-color: #383838;
+	background: var(--button-primary-hover);
+	border-color: var(--button-primary-hover);
 }
 
 .secondaryButton {
-	background-color: transparent;
-	color: black;
-	border-color: #ccc;
+	background: transparent;
+	color: var(--foreground);
+	border-color: rgba(0, 0, 0, 0.2);
 }
 
 .secondaryButton:hover {
-	background-color: #ebe8e4;
-	border-color: black;
+	background: var(--button-secondary-hover);
+	border-color: var(--foreground);
 }

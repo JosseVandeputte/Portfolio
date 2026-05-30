@@ -59,7 +59,12 @@ export default function Privacy() {
 							<p>
 								<strong>Josse Vandeputte</strong>
 							</p>
-							<p>Email: info@vdpj.be</p>
+							<p>
+								Email:{" "}
+								<a href="mailto:info@vdpj.be" className={styles.emailLink}>
+									info@vdpj.be
+								</a>
+							</p>
 						</div>
 					</div>
 				</section>

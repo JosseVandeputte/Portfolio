@@ -39,16 +39,65 @@
 
 
 
+.sessionIndex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(var(--gray-rgb), 0.08);
+  border-radius: 12px;
+}
+
+.sessionIndexItem {
+  display: grid;
+  grid-template-columns: 2rem 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.25rem;
+  border-radius: 6px;
+  color: var(--foreground);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.sessionIndexItem:hover {
+  background: rgba(var(--gray-rgb), 0.05);
+}
+
+.sessionIndexNumber {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.sessionIndexTitle {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sessionIndexDate {
+  font-size: 0.8rem;
+  color: rgba(var(--gray-rgb), 0.5);
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
   }
-  
+
   .hero {
     margin-bottom: 60px;
   }
-  
-  .iconWrapper {
-    font-size: 3rem;
+
+  .sessionIndexItem {
+    grid-template-columns: 2rem 1fr;
+  }
+
+  .sessionIndexDate {
+    display: none;
   }
 }

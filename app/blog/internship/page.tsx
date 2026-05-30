@@ -20,12 +20,12 @@ const gallery = [
 		caption: "Cybersec 2026 - Brussel Expo",
 		featured: false,
 	},
-  {
-    src: "/blog/internship/game-night.png",
-    alt: "Game night with the team",
-    caption: "Game night with the team",
-    featured: false,
-  }
+	{
+		src: "/blog/internship/game-night.png",
+		alt: "Game night with the team",
+		caption: "Game night with the team",
+		featured: false,
+	},
 ];
 
 const stack = [
@@ -113,7 +113,7 @@ export default function Internship() {
 								OutKept recently achieved their ISO
 								27001 certificate. And in my first week
 								of internship we receive from one of
-								their partners a "gefelicitaart" all the
+								their partners a &ldquo;gefelicitaart&rdquo; all the
 								way from The Netherlands. It was a nice
 								way to start the internship and a great
 								example of the kind of impact OutKept
@@ -144,18 +144,18 @@ export default function Internship() {
 								AI, and to network with professionals in
 								the industry.
 							</li>
-              <li>
+							<li>
 								<strong>Game night</strong> - One of the
 								last weeks, the team organized a game
-								night where we played some games and
-								had fun together. It was a nice way
-								to come together and unwind after a few
-								weeks of hard work, and it was great to
-								see the team bond over some friendly
+								night where we played some games and had
+								fun together. It was a nice way to come
+								together and unwind after a few weeks of
+								hard work, and it was great to see the
+								team bond over some friendly
 								competition.
 							</li>
 							<li>
-								<strong>"Friesday"</strong> - Every
+								<strong>&ldquo;Friesday&rdquo;</strong> - Every
 								Friday, the team has a tradition of
 								having fries together. It was a great
 								way to bond with the team and get to
@@ -183,27 +183,27 @@ export default function Internship() {
 							better understanding of what it&apos;s like
 							to work in the tech industry.
 						</p>
-            <br/>
+						<br />
 						<p>
 							Also, i learned a lot about how to talk to
 							none technical people about technical stuff,
 							especially in sprint reviews and meetings
 							with none technical colleagues. It was a
 							great experience to learn how to communicate
-							complex technical concepts in a way that's
+							complex technical concepts in a way that&apos;s
 							accessible and understandable to everyone,
 							regardless of their technical background.
 						</p>
-            <br/>
+						<br />
 						<p>
 							Because the OutKept developers team is not
 							that big, we also needed to do some
 							QA-testing, which was a great experience to
-							learn how to test new implemented features. 
-              So with this I also learned how
-							to think about what the impact of a small
-							change can be on the whole application, and
-							how to test for that.
+							learn how to test new implemented features.
+							So with this I also learned how to think
+							about what the impact of a small change can
+							be on the whole application, and how to test
+							for that.
 						</p>
 					</section>
 

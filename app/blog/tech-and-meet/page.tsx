@@ -84,9 +84,7 @@ export default function TechAndMeet() {
 			<div className={styles.container}>
 				<div className={styles.hero}>
 					<h1 className={styles.title}>Tech & Meet @ Howest</h1>
-					<p className={styles.subtitle}>
-						Where Technology Meets Community
-					</p>
+					<p className={styles.subtitle}>Where Technology Meets Community</p>
 				</div>
 
 				<nav className={styles.sessionIndex}>
@@ -96,15 +94,9 @@ export default function TechAndMeet() {
 							href={`#session-${index + 1}`}
 							className={styles.sessionIndexItem}
 						>
-							<span className={styles.sessionIndexNumber}>
-								#{index + 1}
-							</span>
-							<span className={styles.sessionIndexTitle}>
-								{session.title}
-							</span>
-							<span className={styles.sessionIndexDate}>
-								{session.date}
-							</span>
+							<span className={styles.sessionIndexNumber}>#{index + 1}</span>
+							<span className={styles.sessionIndexTitle}>{session.title}</span>
+							<span className={styles.sessionIndexDate}>{session.date}</span>
 						</a>
 					))}
 				</nav>

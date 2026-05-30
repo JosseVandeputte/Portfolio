@@ -1,141 +1,141 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: rgba(252, 252, 252, 0.8);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(var(--gray-rgb), 0.08);
-  padding-top: .5rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: rgba(252, 252, 252, 0.8);
+	backdrop-filter: blur(20px);
+	border-bottom: 1px solid rgba(var(--gray-rgb), 0.08);
+	padding-top: 0.5rem;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--foreground);
-  text-decoration: none;
-  font-family: var(--font-geist-mono);
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--foreground);
+	text-decoration: none;
+	font-family: var(--font-geist-mono);
 }
 
 .logoImage {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .nav {
-  display: flex;
-  gap: 32px;
+	display: flex;
+	gap: 32px;
 }
 
 .navLink {
-  color: var(--foreground);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-  position: relative;
+	color: var(--foreground);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s ease;
+	position: relative;
 }
 
 .navLink:hover {
-  color: #666;
+	color: #666;
 }
 
 .navLink.active {
-  color: var(--foreground);
+	color: var(--foreground);
 }
 
 .navLink.active::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--foreground);
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background: var(--foreground);
 }
 
-
-
 .hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
 }
 
 .bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--foreground);
-  border-radius: 2px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: var(--foreground);
+	border-radius: 2px;
+	transition:
+		transform 0.2s ease,
+		opacity 0.2s ease;
 }
 
 .barTop {
-  transform: translateY(7px) rotate(45deg);
+	transform: translateY(7px) rotate(45deg);
 }
 
 .barMid {
-  opacity: 0;
+	opacity: 0;
 }
 
 .barBot {
-  transform: translateY(-7px) rotate(-45deg);
+	transform: translateY(-7px) rotate(-45deg);
 }
 
 .mobileMenu {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid rgba(var(--gray-rgb), 0.08);
-  background: rgba(252, 252, 252, 0.97);
-  backdrop-filter: blur(20px);
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid rgba(var(--gray-rgb), 0.08);
+	background: rgba(252, 252, 252, 0.97);
+	backdrop-filter: blur(20px);
 }
 
 .mobileLink {
-  padding: 14px 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--foreground);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(var(--gray-rgb), 0.06);
-  transition: background 0.15s ease;
+	padding: 14px 20px;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--foreground);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(var(--gray-rgb), 0.06);
+	transition: background 0.15s ease;
 }
 
 .mobileLink:hover {
-  background: rgba(var(--gray-rgb), 0.04);
+	background: rgba(var(--gray-rgb), 0.04);
 }
 
 .mobileActive {
-  color: var(--accent);
+	color: var(--accent);
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 16px;
-  }
+	.container {
+		padding: 0 16px;
+	}
 
-  .nav {
-    display: none;
-  }
+	.nav {
+		display: none;
+	}
 
-  .hamburger {
-    display: flex;
-  }
+	.hamburger {
+		display: flex;
+	}
 }

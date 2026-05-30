@@ -1,37 +1,37 @@
 :root {
-  --background: #f5f3f0;
-  --foreground: #1a1a1a;
-  --background-rgb: 245, 243, 240;
-  --gray-rgb: 0, 0, 0;
-  --accent: #b87333;
-  --accent-light: #d4956a;
-  --accent-dark: #8b5e3c;
-  --card-bg: #faf9f7;
-  --section-tint: #edeae6;
+	--background: #f5f3f0;
+	--foreground: #1a1a1a;
+	--background-rgb: 245, 243, 240;
+	--gray-rgb: 0, 0, 0;
+	--accent: #b87333;
+	--accent-light: #d4956a;
+	--accent-dark: #8b5e3c;
+	--card-bg: #faf9f7;
+	--section-tint: #edeae6;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-top: 60px; /* Account for fixed header */
+	color: var(--foreground);
+	background: var(--background);
+	font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding-top: 60px; /* Account for fixed header */
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }

@@ -5,32 +5,32 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+	variable: "--font-geist-sans",
+	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+	variable: "--font-geist-mono",
+	subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Josse Vandeputte - Portfolio",
-  description: "Full-stack developer and designer creating digital experiences",
+	title: "Josse Vandeputte - Portfolio",
+	description: "Full-stack developer and designer creating digital experiences",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={`${geistSans.variable} ${geistMono.variable}`}>
+				<Header />
+				<main>{children}</main>
+				<Footer />
+			</body>
+		</html>
+	);
 }

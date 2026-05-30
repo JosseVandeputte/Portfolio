@@ -76,6 +76,22 @@ export default function Blog() {
                                 Read More
                             </Link>
                         </div>
+                        <div className={styles.link}>
+                            <Image
+                                src="/blog/podcast.png"
+                                alt="Podcast Placeholder"
+                                width={600}
+                                height={400}
+                                className={styles.blogImage}
+                            />
+                            <h2 className={styles.blogTitle}>How AI Is Changing the Job of Software Developers</h2>
+                            <p className={styles.blogDescription}>
+                                Reflections on a conversation about AI and software development from the Howest IT Student Podcast.
+                            </p>
+                            <Link href="/blog/podcast" className={styles.readMore}>
+                                Read More
+                            </Link>
+                        </div>
                     </div>
                 </section>
             </div>

@@ -79,7 +79,9 @@
 	.container {
 		padding: 0 16px;
 	}
+}
 
+@media (max-width: 640px) {
 	.contactMethods {
 		grid-template-columns: 1fr;
 		gap: 16px;

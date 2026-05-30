@@ -17,17 +17,17 @@ export default function Blog() {
                     <div className={styles.buttons}>
                         <div className={styles.link}>
                             <Image
-                                src="/blog/hackathon/hackthefuture.jpg"
-                                alt="Hackathon Placeholder"
+                                src="/blog/internship/outkept-logo.jpg"
+                                alt="Internship Placeholder"
                                 width={600}
                                 height={400}
                                 className={styles.blogImage}
                             />
-                            <h2 className={styles.blogTitle}>Hackathon - 2025 </h2>
+                            <h2 className={styles.blogTitle}>Internship @ OutKept</h2>
                             <p className={styles.blogDescription}>
-                                Sharing my experience and learnings from participating in a recent hackathon of Hack The Future.
+                                Reflecting on my internship experience and the valuable lessons learned at Outkept Ghent.
                             </p>
-                            <Link href="/blog/hackathon" className={styles.readMore}>
+                            <Link href="/blog/internship" className={styles.readMore}>
                                 Read More
                             </Link>
                         </div>
@@ -49,17 +49,17 @@ export default function Blog() {
                         </div>
                         <div className={styles.link}>
                             <Image
-                                src="/blog/internship/outkept-logo.jpg"
-                                alt="Internship Placeholder"
+                                src="/blog/hackathon/hackthefuture.jpg"
+                                alt="Hackathon Placeholder"
                                 width={600}
                                 height={400}
                                 className={styles.blogImage}
                             />
-                            <h2 className={styles.blogTitle}>Internship @ OutKept</h2>
+                            <h2 className={styles.blogTitle}>Hackathon - 2025 </h2>
                             <p className={styles.blogDescription}>
-                                Reflecting on my internship experience and the valuable lessons learned at Outkept Ghent.
+                                Sharing my experience and learnings from participating in a recent hackathon of Hack The Future.
                             </p>
-                            <Link href="/blog/internship" className={styles.readMore}>
+                            <Link href="/blog/hackathon" className={styles.readMore}>
                                 Read More
                             </Link>
                         </div>
